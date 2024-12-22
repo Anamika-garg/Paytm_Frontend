@@ -11,6 +11,7 @@ export const Dashboard = () => {
     const [user, setUser] = useState("")
     const [balance, setBalance] = useState(0);
     useEffect(() => {
+        console.log("Hello")
         const userId = localStorage.getItem("token");
         if (!userId) {
             navigate("/signin")
